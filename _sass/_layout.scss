@@ -2,12 +2,76 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    height: 30px;
+    background-color: #34495e;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+}
+
+
+
+#logo {
+    margin-top: 25px;
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(50%);
+    ms-transform: translateX(-50%) translateY(50%);
+    webkit-transform: translateX(-50%) translateY(50%);
+    o-transform: translateX(-50%) translateY(50%);
+}
+
+
+.component-one {
+    margin-left: 75px;
+}
+
+.header-links {
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    display: inline-block;
+    font-weight: bold;
+
+      
+}
+
+#blog-link {
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    border-top: 4px solid #1abc9c;
+    border-bottom: 4px solid #1abc9c;
+}
+
+#homepage-link {
+    right: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    border-top: 4px solid #34495e;
+    border-bottom: 4px solid #34495e;
+    transition: 0.5s ease;
+}
+
+#homepage-link:hover {
+    transition: 0.5s ease;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top: 4px solid #1abc9c;
+    border-bottom: 4px solid #1abc9c;
+}
+
+#catagories-btn {
+    position: fixed;
+    top: 15%;
+    left: 0;
 }
 
 .site-title {
