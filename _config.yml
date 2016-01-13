@@ -4,7 +4,7 @@ email: me@soumyamishra.com
 description: > # this means to ignore newlines until "baseurl:"
   Blog of web developer Soumya Mishra, where he writes on topics like 
   learning to code, web design and other fun stuff.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://soumyamishra.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  Skmsoumya
