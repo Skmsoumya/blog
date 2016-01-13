@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-01-12 14:36:20
+title:  "How to create a jekyll blog"
+date:   2016-01-13 14:36:20
 categories: jekyll update
 description: How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.
 ---

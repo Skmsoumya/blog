@@ -4,20 +4,35 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+{% for post in paginator.posts %}
+  <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        <h3>
+          {{ post.description }}
+        </h3>
       </li>
-    {% endfor %}
-  </ul>
+{% endfor %}
+ 
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
+
+  <!-- Pagination links -->
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/blog/" class="previous">&laquo;</a>
+    {% else %}
+      <a href=" /blog{{ paginator.previous_page_path }}" class="previous">&laquo;</a>
+    {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="/blog{{ paginator.next_page_path }}" class="next ">&raquo;</a>
+  {% endif %}
+</nav>
 </div>
