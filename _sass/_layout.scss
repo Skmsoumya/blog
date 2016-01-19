@@ -1,6 +1,11 @@
 /**
  * Site header
  */
+
+html, body {
+    height: 100%;
+}
+
 .site-header {
     height: 30px;
     background-color: #34495e;
@@ -9,12 +14,19 @@
     position: relative;
 }
 
+body {
 
+
+background: #134E5E; /* fallback for old browsers */
+background: -webkit-linear-gradient(-45deg, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-45deg, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
 
 #logo {
     margin-top: 25px;
     position: absolute;
-
+    height: 35px;
     bottom: 0;
     left: 50%;
 
@@ -22,6 +34,13 @@
     ms-transform: translateX(-50%) translateY(50%);
     webkit-transform: translateX(-50%) translateY(50%);
     o-transform: translateX(-50%) translateY(50%);
+
+    transition: 0.5s ease;
+}
+
+#logo:hover{
+    height: 50px;
+    transition: 0.5s ease;
 }
 
 
@@ -38,8 +57,105 @@
     top: 0px;
     display: inline-block;
     font-weight: bold;
+}
 
-      
+
+
+.home {
+    position: relative;
+    height: calc(95% - 30px);
+}
+
+.post-holder {
+    position: relative;
+    display: block;
+    height: 70%;
+    left: 5%;
+    width: calc(100% - 10%);
+    top: calc(50% - 40%);
+    overflow: auto;
+}
+
+.element {
+    position: relative;
+    height: calc(100% / 2 );
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+#one {
+    background-color: #3498db;
+}
+
+#two {
+    background-color: #e74c3c;
+}
+
+#three {
+    background-color: #f1c40f;
+}
+
+#four {
+    background-color: #e67e22;
+}
+
+#five {
+    background-color: #2ecc71;
+}
+
+#six {
+    background-color: #9b59b6;
+}
+
+.button-holder{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.button {
+    height: 10vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    background-color: rgba(256, 256, 256, 0.1);
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    background-color: rgba(256, 256, 256, 0.5);
+    transition: 0.5s ease;
+}
+
+.post-title-holder {
+    min-height: 60px;
+}
+
+.post-heading {
+    margin: 0px;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.post-date {
+    color: #fff;
+}
+
+.post-description {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.post-readmore {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-weight: bold;
+    color: #fff;
 }
 
 #blog-link {
@@ -155,71 +271,10 @@
 /**
  * Site footer
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+footer {
+    height: 5%;
+    background-color: #000;
 }
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
 
 
 /**
