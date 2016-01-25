@@ -3,8 +3,6 @@
 $(document).ready(function() {
 	getPostData();
 	
-
-	
 });
 
 // Doing a AJAX call to get Posts data in JSON format from the server
@@ -61,7 +59,7 @@ function animate() {
 
 	function out() {
 		var siblings = $(".a");
-		TweenMax.staggerTo(siblings, 0.2, {scale:1, opacity: 1, ease:  Circ.easeIn, force3D:true, overwrite:"all"});
+		TweenMax.staggerTo(siblings, 0.2, {scale:1, opacity: 1, delay: 0.3, ease:  Circ.easeIn, force3D:true, overwrite:"all"});
 		isTweening = false;
 	}
 }
