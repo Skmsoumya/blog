@@ -5,11 +5,17 @@ layout: default
 	<div class="post col-md-8 col-md-offset-2">
 
   		<header class="post-header">
-    		<h1 class="post-title">{{ page.title }}</h1>
-    		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  		</header>
+    		<h1 class="post-title playfair">{{ page.title }}</h1>
+    		<p class="post-meta opensans">{{ page.type }} • {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+    			{{ post.type }}
+    		</p>
 
-  		<article class="post-content">
+    		<div class="img-holder">
+    			<img src="{{ page.headImg | prepend: site.baseurl }}">
+    		</div>
+
+  		</header>
+  		<article class="post-content opensans">
     		{{ content }}
 
     		<!-- Twitter share widget -->
@@ -48,5 +54,9 @@ layout: default
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 		{% endif %}
 	</div>
+</div>
+
+<div class="footer opensans">
+  © Soumyamishra.com All Rights Reserved.
 </div>
 
