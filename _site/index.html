@@ -1,4 +1,82 @@
-<header id="menu" class="lobster">
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Blog of Soumya Mishra</title>
+  <meta name="description" content="Blog of web developer Soumya Mishra, where he writes on topics like  learning to code, web design and other fun stuff.
+">
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans:400,700|Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/blog/dep/css/bootstrap.min.css">
+  <link rel="canonical" href="http://soumyamishra.com/blog/">
+  <link rel="alternate" type="application/rss+xml" title="Blog of Soumya Mishra" href="http://soumyamishra.com/blog/feed.xml" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/blog/dep/images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/blog/dep/images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/blog/dep/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/dep/images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/blog/dep/images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/blog/dep/images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/blog/dep/images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/blog/dep/images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/dep/images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/blog/dep/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/blog/dep/images/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/blog/dep/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/blog/dep/images/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/blog/dep/images/manifest.json">
+  <link rel="mask-icon" href="/blog/dep/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/blog/dep/images/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <script src="/blog/dep/js/TweenMax.min.js"></script>
+  <script src="/blog/dep/js/jquery.min.js"></script>
+  <script src="/blog/dep/js/jsrender.min.js"></script>
+  <script src="/blog/dep/js/main.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+  <!-- Facebook Preview content -->
+
+  <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://soumyamishra.com/blog" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Blog of Soumya Mishra" />
+  <meta property="og:description"   content="Blog of web developer Soumya Mishra, where he writes on topics like  learning to code, web design and other fun stuff.
+" />
+  <meta property="og:image"         content="/blog/dep/images/img/som.png" />
+</head>
+
+
+  <body>
+  	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '648341131975433',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+    <header id="menu" class="lobster">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="logo" x="0" y="0" width="64.85" height="63.6" viewBox="0 0 64.85 63.6" enable-background="new 0 0 64.845 63.596" xml:space="preserve">
     <rect x="0" y="0" fill="#E54D3B" width="64.85" height="63.6"/>
     <path fill="#FFFFFF" d="M33.57 26.34c0.27 0 0.51-0.04 0.72-0.13 0.21-0.09 0.39-0.21 0.53-0.37 0.14-0.16 0.26-0.36 0.33-0.59 0.08-0.23 0.12-0.5 0.12-0.79v-4.98h1.99v4.98c0 0.52-0.08 0.99-0.26 1.42 -0.17 0.43-0.41 0.8-0.73 1.11 -0.32 0.31-0.7 0.55-1.16 0.73 -0.45 0.17-0.97 0.26-1.54 0.26 -0.57 0-1.09-0.09-1.54-0.26 -0.46-0.17-0.84-0.42-1.16-0.73 -0.32-0.31-0.56-0.68-0.73-1.11 -0.17-0.43-0.25-0.9-0.25-1.42v-4.98h1.99v4.98c0 0.3 0.04 0.56 0.12 0.79 0.08 0.23 0.19 0.43 0.33 0.6s0.32 0.29 0.53 0.38C33.06 26.3 33.3 26.34 33.57 26.34z"/>
@@ -25,3 +103,54 @@
     </a>
   </div>
 </header>
+
+    <div class="latest text-center">
+  <a id="latest-link">
+    <span class="latest-tag opensans">LATEST POST | </span>
+    <span id="latest-date" class="latest-tag"></span>
+
+    <div id="latest-head" class="playfair">
+      Welcome to the little red riding hood.
+    </div>
+    <div id="latest-catagories" class="opensans"></div>
+    <img id="latest-img">
+  </a>
+</div>
+<div class="wrap">
+  <div id="post-holder" class="post-holder">
+      
+  </div>
+</div>
+
+<div class="buttons">
+  <div id="previous" class="post-btn">Previous</div><div id="next" class="post-btn">Next</div>
+</div>
+
+<div class="footer opensans">
+  © Soumyamishra.com All Rights Reserved.
+</div>
+<script id="postTemplate" type="text/x-jsrender">
+  <div id="{{:id}}" class="element">
+    <div class="post-thumb">
+      <a class="link" href="{{:url}}">
+        <img class="post-img" src="{{:featuredImg}}" />
+      </a>
+    </div>
+    <div class="post-des">
+      <div class="post-title-holder">
+        <a class="link" href="{{:url}}">
+          <div class="post-heading playfair">
+            {{:title}}
+          </div>
+        </a>
+      </div>
+      <p class="post-date opensans">{{:date}}, {{:tags}}</p>
+    </div>
+  </div>
+</script>
+
+
+
+  </body>
+
+</html>

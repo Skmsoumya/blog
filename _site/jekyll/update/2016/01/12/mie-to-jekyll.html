@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>mie to Jekyll!</title>
+  <meta name="description" content="How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.">
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans:400,700|Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/blog/dep/css/bootstrap.min.css">
+  <link rel="canonical" href="http://soumyamishra.com/blog/jekyll/update/2016/01/12/mie-to-jekyll.html">
+  <link rel="alternate" type="application/rss+xml" title="Blog of Soumya Mishra" href="http://soumyamishra.com/blog/feed.xml" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/blog/dep/images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/blog/dep/images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/blog/dep/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/dep/images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/blog/dep/images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/blog/dep/images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/blog/dep/images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/blog/dep/images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/dep/images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/blog/dep/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/blog/dep/images/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/blog/dep/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/blog/dep/images/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/blog/dep/images/manifest.json">
+  <link rel="mask-icon" href="/blog/dep/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/blog/dep/images/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <script src="/blog/dep/js/TweenMax.min.js"></script>
+  <script src="/blog/dep/js/jquery.min.js"></script>
+  <script src="/blog/dep/js/jsrender.min.js"></script>
+  <script src="/blog/dep/js/main.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+  <!-- Facebook Preview content -->
+
+  <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://soumyamishra.com/blog" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="mie to Jekyll!" />
+  <meta property="og:description"   content="How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented." />
+  <meta property="og:image"         content="/blog/dep/images/img/som.png" />
+</head>
+
+
+  <body>
+  	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '648341131975433',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+    <header id="menu" class="lobster">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="logo" x="0" y="0" width="64.85" height="63.6" viewBox="0 0 64.85 63.6" enable-background="new 0 0 64.845 63.596" xml:space="preserve">
+    <rect x="0" y="0" fill="#E54D3B" width="64.85" height="63.6"/>
+    <path fill="#FFFFFF" d="M33.57 26.34c0.27 0 0.51-0.04 0.72-0.13 0.21-0.09 0.39-0.21 0.53-0.37 0.14-0.16 0.26-0.36 0.33-0.59 0.08-0.23 0.12-0.5 0.12-0.79v-4.98h1.99v4.98c0 0.52-0.08 0.99-0.26 1.42 -0.17 0.43-0.41 0.8-0.73 1.11 -0.32 0.31-0.7 0.55-1.16 0.73 -0.45 0.17-0.97 0.26-1.54 0.26 -0.57 0-1.09-0.09-1.54-0.26 -0.46-0.17-0.84-0.42-1.16-0.73 -0.32-0.31-0.56-0.68-0.73-1.11 -0.17-0.43-0.25-0.9-0.25-1.42v-4.98h1.99v4.98c0 0.3 0.04 0.56 0.12 0.79 0.08 0.23 0.19 0.43 0.33 0.6s0.32 0.29 0.53 0.38C33.06 26.3 33.3 26.34 33.57 26.34z"/>
+    <path fill="#FFFFFF" d="M42.53 11.33c0 1.22-0.22 2.36-0.65 3.42 -0.43 1.05-1.04 1.97-1.82 2.75 -0.78 0.78-1.72 1.39-2.82 1.83 -1.1 0.44-2.32 0.66-3.66 0.66s-2.56-0.22-3.67-0.66c-1.1-0.44-2.05-1.05-2.84-1.83 -0.79-0.78-1.39-1.69-1.82-2.75 -0.43-1.05-0.64-2.19-0.64-3.41 0-1.22 0.22-2.36 0.65-3.41 0.43-1.05 1.04-1.97 1.82-2.74 0.79-0.77 1.73-1.38 2.84-1.82s2.33-0.66 3.67-0.66 2.56 0.22 3.67 0.67c1.1 0.45 2.04 1.06 2.83 1.83 0.78 0.77 1.39 1.69 1.82 2.74C42.32 8.98 42.53 10.11 42.53 11.33zM38.44 11.33c0-0.84-0.11-1.59-0.33-2.26 -0.22-0.67-0.54-1.24-0.95-1.7 -0.41-0.46-0.92-0.82-1.52-1.07 -0.6-0.25-1.28-0.37-2.05-0.37 -0.77 0-1.46 0.12-2.07 0.37 -0.6 0.25-1.11 0.6-1.53 1.07 -0.41 0.46-0.73 1.03-0.95 1.7 -0.22 0.67-0.33 1.42-0.33 2.26 0 0.84 0.11 1.6 0.33 2.27 0.22 0.67 0.54 1.24 0.95 1.7 0.41 0.46 0.92 0.82 1.53 1.06 0.6 0.24 1.29 0.37 2.07 0.37 0.77 0 1.45-0.12 2.05-0.37 0.6-0.24 1.11-0.6 1.52-1.06 0.41-0.46 0.73-1.03 0.95-1.7C38.32 12.93 38.44 12.17 38.44 11.33z"/>
+    <path fill="#FFFFFF" d="M33.03 30.08c0.19 0.41 0.37 0.83 0.54 1.25 0.17-0.44 0.36-0.86 0.55-1.28 0.19-0.41 0.39-0.81 0.59-1.2l5.69-10.99c0.1-0.19 0.21-0.33 0.31-0.44 0.11-0.1 0.23-0.18 0.36-0.23 0.13-0.05 0.28-0.07 0.45-0.07 0.17 0 0.36 0 0.59 0h3.92v21.72h-4.53v-12.5c0-0.61 0.03-1.26 0.09-1.97L35.71 35.54c-0.18 0.35-0.43 0.61-0.74 0.79 -0.31 0.18-0.66 0.27-1.06 0.27h-0.7c-0.4 0-0.75-0.09-1.06-0.27 -0.31-0.18-0.56-0.44-0.74-0.79l-5.9-11.19c0.04 0.35 0.07 0.69 0.09 1.04 0.02 0.35 0.03 0.66 0.03 0.95v12.5H21.11v-21.72h3.92c0.22 0 0.42 0 0.59 0s0.32 0.02 0.45 0.07c0.13 0.05 0.25 0.13 0.36 0.23 0.11 0.1 0.21 0.25 0.31 0.44l5.7 11.04C32.65 29.28 32.84 29.67 33.03 30.08z"/>
+    <path fill="#FFFFFF" d="M34.76 42.51v3.84h-2.39v-3.84l-3.73-6.26h2.11c0.21 0 0.37 0.05 0.5 0.14 0.12 0.1 0.22 0.22 0.3 0.37l1.46 2.94c0.12 0.24 0.23 0.45 0.33 0.65 0.1 0.2 0.19 0.4 0.26 0.59 0.07-0.2 0.16-0.4 0.25-0.6 0.1-0.2 0.21-0.41 0.32-0.64l1.44-2.94c0.03-0.06 0.07-0.12 0.12-0.18s0.11-0.11 0.17-0.16c0.06-0.05 0.14-0.09 0.22-0.12 0.08-0.03 0.17-0.04 0.27-0.04h2.12L34.76 42.51z"/>
+    <path fill="#FFFFFF" d="M42.17 61.08h-3.06c-0.34 0-0.62-0.08-0.85-0.23 -0.22-0.16-0.38-0.36-0.46-0.6l-1-2.91h-6.47l-1 2.91c-0.08 0.21-0.23 0.41-0.45 0.58 -0.23 0.17-0.5 0.26-0.83 0.26h-3.08l6.58-16.68h4.04L42.17 61.08zM31.25 54.7h4.64l-1.56-4.57c-0.1-0.29-0.22-0.63-0.36-1.02 -0.14-0.39-0.27-0.82-0.4-1.28 -0.12 0.47-0.25 0.9-0.39 1.29 -0.13 0.4-0.26 0.74-0.37 1.03L31.25 54.7z"/>
+    <path fill="#FFFFFF" d="M24.72 7.3c-0.05 0.06-0.11 0.11-0.16 0.14 -0.05 0.03-0.12 0.04-0.2 0.02 -0.08-0.01-0.17-0.07-0.26-0.16 -0.09-0.1-0.22-0.21-0.37-0.33 -0.15-0.12-0.33-0.24-0.55-0.36 -0.22-0.12-0.49-0.2-0.82-0.25 -0.31-0.05-0.59-0.05-0.85-0.01s-0.47 0.12-0.65 0.24C20.67 6.7 20.52 6.85 20.41 7.02c-0.11 0.18-0.19 0.38-0.22 0.6 -0.05 0.28-0.01 0.53 0.1 0.74 0.11 0.21 0.27 0.4 0.48 0.56S21.22 9.24 21.5 9.39c0.28 0.14 0.56 0.29 0.86 0.44 0.29 0.15 0.57 0.32 0.85 0.49 0.27 0.18 0.51 0.38 0.71 0.62 0.2 0.23 0.35 0.51 0.44 0.81 0.09 0.31 0.11 0.67 0.04 1.09 -0.07 0.44-0.22 0.84-0.43 1.21 -0.22 0.36-0.5 0.67-0.84 0.91 -0.34 0.24-0.74 0.41-1.2 0.51 -0.46 0.1-0.96 0.1-1.5 0.02 -0.67-0.1-1.25-0.32-1.76-0.64s-0.92-0.72-1.25-1.18l0.51-0.58c0.05-0.05 0.1-0.08 0.16-0.11 0.06-0.03 0.13-0.04 0.19-0.02 0.1 0.02 0.21 0.09 0.32 0.21 0.11 0.13 0.26 0.27 0.43 0.43 0.17 0.16 0.39 0.31 0.65 0.46 0.26 0.15 0.59 0.26 0.98 0.32 0.33 0.05 0.63 0.05 0.91 0.01 0.27-0.05 0.51-0.14 0.72-0.27 0.21-0.13 0.38-0.31 0.51-0.52 0.13-0.21 0.22-0.45 0.27-0.73 0.05-0.3 0.02-0.57-0.09-0.78 -0.11-0.22-0.27-0.41-0.48-0.58 -0.21-0.17-0.45-0.32-0.73-0.46 -0.28-0.14-0.57-0.28-0.86-0.42 -0.29-0.14-0.58-0.3-0.85-0.48 -0.28-0.17-0.51-0.38-0.71-0.62 -0.2-0.24-0.34-0.52-0.43-0.85 -0.09-0.32-0.1-0.71-0.03-1.16 0.06-0.36 0.19-0.69 0.38-1 0.2-0.31 0.45-0.57 0.76-0.79 0.31-0.22 0.68-0.37 1.1-0.46 0.42-0.09 0.89-0.1 1.4-0.02 0.57 0.09 1.09 0.26 1.53 0.52 0.45 0.25 0.82 0.58 1.12 0.97L24.72 7.3z"/>
+    <path fill="#2D3F50" d="M30.78 14.47c0.8 0 2.19-0.39 2.79-1.57 0.6 1.17 2 1.57 2.79 1.57 2.6 0 2.99-1.76 2.99-1.76 -0.2 0.2-0.6 0.39-1.2 0.39 -1 0-1.2-1.76-2.59-1.76 -1.4 0-1.99 0.98-1.99 0.98s-0.6-0.98-1.99-0.98c-1.4 0-1.6 1.76-2.59 1.76 -0.6 0-1-0.2-1.2-0.39C27.78 12.7 28.18 14.47 30.78 14.47L30.78 14.47zM30.78 14.47"/>
+    <polygon opacity="0.1" fill="#FFFFFF" points="0 63.6 0 0 64.85 0 "/>
+  </svg>
+
+  <div id="buttons-holder">
+    <div data-menuanchor="about" class="header-buttons" id="menu-about-button">
+      About
+    </div>
+
+    <div data-menuanchor="contact" class="header-buttons" id="menu-contact-button">
+      Contact
+    </div>
+
+    <a href="http://soumyamishra.com/blog" class="header-buttons" id="menu-blog-button">
+      Blog
+    </a>
+  </div>
+</header>
+
+    <div class="post-content-holder container-fluid">
+	<div class="post col-md-8 col-md-offset-2">
+
+  		<header class="post-header">
+    		<h1 class="post-title playfair">mie to Jekyll!</h1>
+    		<p class="post-meta opensans"> • Jan 12, 2016
+    			
+    		</p>
+
+    		<div class="img-holder">
+    			<img src="/blog">
+    		</div>
+
+  		</header>
+  		<article class="post-content opensans">
+    		<p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+
+
+
+    		<!-- Twitter share widget -->
+    		<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="Soumya_kishor">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			
+			<!-- Google plus share widget -->
+			<!-- Place this tag where you want the share button to render. -->
+			<div class="g-plus" data-action="share" data-annotation="none"></div>
+
+  		</article>
+
+  		
+  			<div id="disqus_thread"></div>
+
+			<script>
+				/**
+				* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+				*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+
+				s.src = '//soumyamishra.disqus.com/embed.js';
+
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		
+	</div>
+</div>
+
+<div class="footer opensans">
+  © Soumyamishra.com All Rights Reserved.
+</div>
+
+
+
+  </body>
+
+</html>

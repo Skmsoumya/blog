@@ -2,44 +2,48 @@
 layout: default
 ---
 
-<div id="home" class="home">  
+<div class="latest text-center">
+  <a id="latest-link">
+    <span class="latest-tag opensans">LATEST POST | </span>
+    <span id="latest-date" class="latest-tag"></span>
+
+    <div id="latest-head" class="playfair">
+      Welcome to the little red riding hood.
+    </div>
+    <div id="latest-catagories" class="opensans"></div>
+    <img id="latest-img">
+  </a>
+</div>
+<div class="wrap">
   <div id="post-holder" class="post-holder">
-    
+      
   </div>
-  <div class="button-holder">
+</div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="previous" class="button" x="0" y="0" width="100" height="100" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-      <circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="47.5"/>
-      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="66.5" y1="16.5" x2="33.25" y2="49.75"/>
-      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="33.25" y1="49.75" x2="66.75" y2="83.25"/>
-    </svg>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="next" class="button" x="0" y="0" width="100" height="100" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-      <circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="47.5"/>
-      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="33.5" y1="16.5" x2="66.75" y2="49.75"/>
-      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="66.75" y1="49.75" x2="33.25" y2="83.25"/>
-    </svg>
-  </div>
+<div class="buttons">
+  <div id="previous" class="post-btn">Previous</div><div id="next" class="post-btn">Next</div>
+</div>
 
-
-  <script id="postTemplate" type="text/x-jsrender">
-    <div id="{% raw %}{{:id}}{% endraw %}" class="element col-sm-4">
-      <a class="link" href="{% raw %}{{:url}}{% endraw %}"
-          <p class="post-date">{% raw %}{{:date}}{% endraw %}</p>
-          <div class="post-title-holder">
-            <h2 class="post-heading">
-              {% raw %}{{:title}}{% endraw %}
-            </h2>
-          </div>
-
-          <p class="post-description">
-            {% raw %}{{:description}}{% endraw %}
-          </p>
-
-          <div class="post-readmore">
-            Read More
-          </div>
+<div class="footer opensans">
+  © Soumyamishra.com All Rights Reserved.
+</div>
+<script id="postTemplate" type="text/x-jsrender">
+  <div id="{% raw %}{{:id}}{% endraw %}" class="element">
+    <div class="post-thumb">
+      <a class="link" href="{% raw %}{{:url}}{% endraw %}">
+        <img class="post-img" src="{% raw %}{{:featuredImg}}{% endraw %}" />
       </a>
     </div>
-  </script>
-</div>
+    <div class="post-des">
+      <div class="post-title-holder">
+        <a class="link" href="{% raw %}{{:url}}{% endraw %}">
+          <div class="post-heading playfair">
+            {% raw %}{{:title}}{% endraw %}
+          </div>
+        </a>
+      </div>
+      <p class="post-date opensans">{% raw %}{{:date}}{% endraw %}, {% raw %}{{:tags}}{% endraw %}</p>
+    </div>
+  </div>
+</script>
+
