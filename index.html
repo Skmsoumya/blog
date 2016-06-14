@@ -2,48 +2,9 @@
 layout: default
 ---
 
-<div class="latest text-center">
-  <a id="latest-link">
-    <span class="latest-tag opensans">LATEST POST | </span>
-    <span id="latest-date" class="latest-tag"></span>
+<template is="dom-bind" id="app">
+	<blog-app></blog-app>
+</template>
 
-    <div id="latest-head" class="playfair">
-      Welcome to the little red riding hood.
-    </div>
-    <div id="latest-catagories" class="opensans"></div>
-    <img id="latest-img">
-  </a>
-</div>
-<div class="wrap">
-  <div id="post-holder" class="post-holder">
-      
-  </div>
-</div>
 
-<div class="buttons">
-  <div id="previous" class="post-btn">Previous</div><div id="next" class="post-btn">Next</div>
-</div>
-
-<div class="footer opensans">
-  © Soumyamishra.com All Rights Reserved.
-</div>
-<script id="postTemplate" type="text/x-jsrender">
-  <div id="{% raw %}{{:id}}{% endraw %}" class="element">
-    <div class="post-thumb">
-      <a class="link" href="{% raw %}{{:url}}{% endraw %}">
-        <img class="post-img" src="{% raw %}{{:featuredImg}}{% endraw %}" />
-      </a>
-    </div>
-    <div class="post-des">
-      <div class="post-title-holder">
-        <a class="link" href="{% raw %}{{:url}}{% endraw %}">
-          <div class="post-heading playfair">
-            {% raw %}{{:title}}{% endraw %}
-          </div>
-        </a>
-      </div>
-      <p class="post-date opensans">{% raw %}{{:date}}{% endraw %}, {% raw %}{{:tags}}{% endraw %}</p>
-    </div>
-  </div>
-</script>
-
+<script src="{{ site.baseurl }}/dep/js/main.js"></script>

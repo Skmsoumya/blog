@@ -1,0 +1,5 @@
+Polymer({
+	is: "blog-data",
+
+	
+});

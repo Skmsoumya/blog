@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "homepage": "https://github.com/Skmsoumya/blog",
+  "authors": [
+    "Skmsoumya <soumyakishormishra@gmail.com>"
+  ],
+  "description": "Blog of soumya kishor mishra",
+  "main": "index.html",
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0"
+  }
+}
