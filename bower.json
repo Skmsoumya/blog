@@ -19,6 +19,10 @@
     "tests"
   ],
   "dependencies": {
-    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0"
+    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0",
+    "webcomponentsjs": "^0.7.22",
+    "iron-image": "PolymerElements/iron-image#^1.2.3",
+    "iron-icons": "PolymerElements/iron-icons#^1.1.3",
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.8"
   }
 }

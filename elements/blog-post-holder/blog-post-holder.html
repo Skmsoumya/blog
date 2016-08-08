@@ -1,0 +1,52 @@
+<link rel="import" href="../../bower_components/polymer/polymer-mini.html">
+<link rel="import" href="blog-post-holder-style.html">
+
+<dom-module id="blog-post-holder">
+	<template>
+		<div class="blog-posts-holder">
+			<template is="dom-repeat" items="{{ postData }}" as="post">
+				<div class="blog-post-card-holder">
+					<div class="blog-hero-img-holder">
+						<iron-image class="post-hero-img" sizing="cover" src="{{ post.featuredImg }}"></iron-image>
+
+						<div id="share-holder-card" class="share-buttons-holder">
+							<div class="share-button-toggle">
+								<iron-icon icon="social:share"></iron-icon>
+
+								<paper-ripple></paper-ripple>
+								<div class="clickable" on-click="toggleShare"></div>
+							</div>
+
+							<div class="share-holder"></div>
+						</div>
+					</div>
+
+					<div class="post-details-holder">
+						<div class="post-title-holder opensans">
+							{{ post.title }}
+						</div>
+						<div class="post-date">
+							{{ post.date }}
+						</div>
+
+						<div class="post-description-holder">
+							{{ post.description }}
+						</div>
+
+						
+					</div>
+
+					<div class="post-tags-holder">
+						<template is="dom-repeat" items="{{ post.categories }}" as="category">
+							<span class="category-tag">
+								{{ category }}
+							</span>
+						</template>
+					</div>
+				</div>
+			</template>
+		</div>
+	</template>
+
+	<script src="blog-post-holder.js"></script>
+</dom-module>

@@ -1,0 +1,202 @@
+<link rel="import" href="../../bower_components/polymer/polymer-mini.html">
+
+<dom-module id="blog-post-holder-style">
+	<style>
+
+		.blog-posts-holder {
+			background-color: #ecf0f1;
+			min-height: calc(100% - 64px);
+			text-align: center;
+			padding: 50px 0px;
+			margin: 0 auto;
+			border-radius: 3px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.blog-post-card-holder {
+			display: flex;
+			flex-direction: column;
+			width: 300px;
+			padding: 0;
+			margin: 5px;
+			background: #fff;
+			box-sizing: border-box;
+			vertical-align: top;
+			position: relative;
+		}
+
+		.blog-post-card-holder:hover {
+			-webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+			box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+		}
+
+		.blog-hero-img-holder {
+			position: relative;
+			height: 280px;
+			overflow: hidden;
+		}
+
+		.post-hero-img {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+			transform: translateY(-50%);
+
+			
+
+			background: #D3959B; /* fallback for old browsers */
+			background: -webkit-linear-gradient( 45deg, #D3959B , #BFE6BA); /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(45deg, #D3959B , #BFE6BA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+		}
+
+		.post-details-holder {
+			position: relative;
+			min-height: 120px;
+			border-top: 1px solid #ecf0f1;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+
+		.post-title-holder {
+			text-align: left;
+			padding: 5px 10px;
+			font-size: 1.2em;
+			font-weight: 600;
+			text-transform: capitalize;
+		}
+
+		.post-date {
+			font-size: 1em;
+			color: #2c3e50;
+			padding: 5px 10px;
+			text-align: left;
+		}
+
+		.post-description-holder {
+			font-size: 1em;
+			color: #7f8c8d;
+			padding: 5px 10px;
+			text-align: left;
+			padding-bottom: 60px;
+		}
+
+		.post-tags-holder {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+		}
+
+		.category-tag {
+			padding: 5px;
+			border-radius: 5px;
+			background: #95a5a6;
+			margin: 3px;
+			color: #fff;
+			letter-spacing: 1px;
+			font-size: 0.8em;
+			text-align: center;
+			text-transform: capitalize;
+		}
+
+		.share-buttons-holder {
+			position: absolute;
+			bottom: 10px;
+			right: -270px;
+			width: 330px;
+			height: 50px;
+			transition: 0.5s ease;
+		}
+
+		.share-button-toggle {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: 0px;
+			background: #fff;
+			border-radius: 25px;
+			top: 50%;
+			left: 25px;
+			color: #2c3e50;
+			transform: translate3d(-50%, -50%, 0);
+
+			-webkit-box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+		}
+
+		.share-button-toggle iron-icon {
+			position: absolute;
+			height: 26px;
+			width: 26px;
+			top: 50%;
+			left:50%;
+			transform: translate3d(-50%, -50%, 0);
+		}
+
+		.share-holder {
+			position: absolute;
+			right: 0px;
+			width: 260px;
+			height: 50px;
+			background: #fff;
+			border-bottom-left-radius: 25px;
+			border-top-left-radius: 25px;
+
+			-webkit-box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+            
+		}
+
+		.shareExpanded {
+			right: 0px;
+			transition: 0.5s ease;
+		}
+
+		.scaleDown {
+			height: 0px;
+			width: 0px;
+			transition: 0.3s ease;
+			box-shadow: none;
+		}
+
+		.clickable {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%, -50%, 0);
+			border-radius: 25px;
+			background: transparent;
+			z-index: 10;
+		}
+
+		.fadeout {
+			opacity: 0;
+			transition: 0.3s ease;
+		}
+ 
+		@media only screen and (max-width: 600px) {
+			.blog-posts-holder {
+				min-height: calc(100% - 54px);
+				padding: 0px;
+			}
+
+			.blog-post-card-holder {
+				width: 100%;
+				margin: 0px;
+				margin-bottom: 5px;
+			}
+
+		}
+	</style>
+</dom-module>

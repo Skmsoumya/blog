@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2016-01-12 14:44:20
 categories: jekyll update
 description: How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.
-color: four
+featuredImg: "/dep/images/post/second/secondPostImg.jpg"
 comments: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
