@@ -1,0 +1,14 @@
+<link rel="import" href="../../bower_components/polymer/polymer-mini.html">
+<link rel="import" href="blog-app-style.html">
+
+
+<dom-module id="blog-app">
+	<style type="text/css"></style>
+
+	<template>
+		<blog-post-holder post-data="{{ postData }}"></blog-post-holder>
+		<blog-data blog-posts-data="{{ postData }}"></blog-data>
+	</template>
+
+	<script src="blog-app.js"></script>
+</dom-module>

@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "How to create a jekyll blog"
+title:  "How to setup a jekyll blog with the added power of polymer to all its glory."
 date:   2016-01-13 14:45:20
 categories: jekyll update
 description: How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.
-color: five
+featuredImg: "/dep/images/post/third/thirdPostImg.jpg"
 comments: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

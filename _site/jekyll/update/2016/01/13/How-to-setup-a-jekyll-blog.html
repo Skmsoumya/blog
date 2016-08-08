@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
-  <title>How to create a jekyll blog</title>
+  <title>How to setup a jekyll blog with the added power of polymer to all its glory.</title>
   <meta name="description" content="How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.">
 
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans:400,700|Lobster' rel='stylesheet' type='text/css'>
@@ -36,12 +38,14 @@
   <meta name="theme-color" content="#ffffff">
 
 
+  
+  <link rel="import" href="elements/elements.html">
+
   <script src="/blog/dep/js/TweenMax.min.js"></script>
   <script src="/blog/dep/js/jquery.min.js"></script>
-  <script src="/blog/dep/js/jsrender.min.js"></script>
-  <script src="/blog/dep/js/main.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-
+  
+<!--   <script src="https://apis.google.com/js/platform.js" async defer></script>
+ -->
 
   <!-- Facebook Preview content -->
 
@@ -49,7 +53,7 @@
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="http://soumyamishra.com/blog" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="How to create a jekyll blog" />
+  <meta property="og:title"         content="How to setup a jekyll blog with the added power of polymer to all its glory." />
   <meta property="og:description"   content="How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented." />
   <meta property="og:image"         content="/blog/dep/images/img/som.png" />
 </head>
@@ -106,7 +110,7 @@
 	<div class="post col-md-8 col-md-offset-2">
 
   		<header class="post-header">
-    		<h1 class="post-title playfair">How to create a jekyll blog</h1>
+    		<h1 class="post-title playfair">How to setup a jekyll blog with the added power of polymer to all its glory.</h1>
     		<p class="post-meta opensans"> • Jan 13, 2016
     			
     		</p>

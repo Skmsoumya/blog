@@ -9,7 +9,6 @@ layout: null
       "url": "{{ post.url | prepend: site.baseurl }}",
       "date": "{{ post.date | date: "%B %-d, %Y" }}",
       "raw_date": "{{ post.date }}",
-      "id": "{{ post.color }}",
       "categories": "{{ post.categories }}",
       "tags": "{{ post.type }}",
       "description": "{{ post.description }}",

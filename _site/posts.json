@@ -1,136 +1,37 @@
 {
 	"posts" : [
     {
-      "title": "How to create a jekyll blog",
+      "title": "How to setup a jekyll blog with the added power of polymer to all its glory.",
       "url": "/blog/jekyll/update/2016/01/13/How-to-setup-a-jekyll-blog.html",
       "date": "January 13, 2016",
       "raw_date": "2016-01-13 20:15:20 +0530",
-      "id": "five",
       "categories": "jekyllupdate",
       "tags": "",
       "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "five",
-      "featuredImg": "/blog" 
+      "color": "",
+      "featuredImg": "/blog/dep/images/post/third/thirdPostImg.jpg" 
     },
     {
       "title": "Welcome to Jekyll!",
       "url": "/blog/jekyll/update/2016/01/12/welcome-to-jekyll.html",
       "date": "January 12, 2016",
       "raw_date": "2016-01-12 20:14:20 +0530",
-      "id": "four",
       "categories": "jekyllupdate",
       "tags": "",
       "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "four",
-      "featuredImg": "/blog" 
+      "color": "",
+      "featuredImg": "/blog/dep/images/post/second/secondPostImg.jpg" 
     },
     {
       "title": "Tie to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Tie-to-jekyll.html",
+      "url": "/blog/jekyll/serve/many/2016/01/12/Tie-to-jekyll.html",
       "date": "January 12, 2016",
       "raw_date": "2016-01-12 20:13:20 +0530",
-      "id": "three",
-      "categories": "jekyllupdate",
+      "categories": "jekyll/serve/many",
       "tags": "",
       "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "three",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "Start to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Start-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:12:20 +0530",
-      "id": "two",
-      "categories": "jekyllupdate",
-      "tags": "",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "two",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "Pie to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Pie-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:11:20 +0530",
-      "id": "one",
-      "categories": "jekyllupdate",
-      "tags": "",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "one",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "Pagination in Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Pagination-in-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:10:20 +0530",
-      "id": "six",
-      "categories": "jekyllupdate",
-      "tags": "",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "six",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "mie to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/mie-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:09:20 +0530",
-      "id": "five",
-      "categories": "jekyllupdate",
-      "tags": "",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "five",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "Makeout to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/makeout-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:08:20 +0530",
-      "id": "four",
-      "categories": "jekyllupdate",
-      "tags": "",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "four",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "Lie to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Lie-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:07:20 +0530",
-      "id": "three",
-      "categories": "jekyllupdate",
-      "tags": "",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "three",
-      "featuredImg": "/blog" 
-    },
-    {
-      "title": "Kill to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Kill-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:06:20 +0530",
-      "id": "#068FCF",
-      "categories": "jekyllupdate",
-      "tags": "Hulla Mulla Thulla",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "#068FCF",
-      "featuredImg": "/blog/dep/images/img/som.png" 
-    },
-    {
-      "title": "Die to Jekyll!",
-      "url": "/blog/jekyll/update/2016/01/12/Die-to-jekyll.html",
-      "date": "January 12, 2016",
-      "raw_date": "2016-01-12 20:04:20 +0530",
-      "id": "#068FCF",
-      "categories": "jekyllupdate",
-      "tags": "Hulla Mulla Thulla",
-      "description": "How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented.",
-      "color": "#068FCF",
-      "featuredImg": "/blog/dep/images/img/som.png" 
+      "color": "",
+      "featuredImg": "/blog/dep/images/post/first/firstPostImg.png" 
     }
     
   ]

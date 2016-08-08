@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
   <title>Blog of Soumya Mishra</title>
   <meta name="description" content="Blog of web developer Soumya Mishra, where he writes on topics like  learning to code, web design and other fun stuff.
@@ -37,12 +39,14 @@
   <meta name="theme-color" content="#ffffff">
 
 
+  
+  <link rel="import" href="elements/elements.html">
+
   <script src="/blog/dep/js/TweenMax.min.js"></script>
   <script src="/blog/dep/js/jquery.min.js"></script>
-  <script src="/blog/dep/js/jsrender.min.js"></script>
-  <script src="/blog/dep/js/main.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-
+  
+<!--   <script src="https://apis.google.com/js/platform.js" async defer></script>
+ -->
 
   <!-- Facebook Preview content -->
 
@@ -104,52 +108,12 @@
   </div>
 </header>
 
-    <div class="latest text-center">
-  <a id="latest-link">
-    <span class="latest-tag opensans">LATEST POST | </span>
-    <span id="latest-date" class="latest-tag"></span>
-
-    <div id="latest-head" class="playfair">
-      Welcome to the little red riding hood.
-    </div>
-    <div id="latest-catagories" class="opensans"></div>
-    <img id="latest-img">
-  </a>
-</div>
-<div class="wrap">
-  <div id="post-holder" class="post-holder">
-      
-  </div>
-</div>
-
-<div class="buttons">
-  <div id="previous" class="post-btn">Previous</div><div id="next" class="post-btn">Next</div>
-</div>
-
-<div class="footer opensans">
-  © Soumyamishra.com All Rights Reserved.
-</div>
-<script id="postTemplate" type="text/x-jsrender">
-  <div id="{{:id}}" class="element">
-    <div class="post-thumb">
-      <a class="link" href="{{:url}}">
-        <img class="post-img" src="{{:featuredImg}}" />
-      </a>
-    </div>
-    <div class="post-des">
-      <div class="post-title-holder">
-        <a class="link" href="{{:url}}">
-          <div class="post-heading playfair">
-            {{:title}}
-          </div>
-        </a>
-      </div>
-      <p class="post-date opensans">{{:date}}, {{:tags}}</p>
-    </div>
-  </div>
-</script>
+    <template is="dom-bind" id="app">
+	<blog-app></blog-app>
+</template>
 
 
+<script src="/blog/dep/js/main.js"></script>
 
   </body>
 
